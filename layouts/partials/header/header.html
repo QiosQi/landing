@@ -7,7 +7,7 @@
   <header class="navbar navbar-expand-md navbar-light doks-navbar">
     <nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation">
       <a class="navbar-brand p-0 me-auto" href="{{ "/" | relLangURL }}" aria-label="{{ .Site.Params.Title }}">
-        {{ .Site.Params.Title }}
+        <img width="150" class="img-fluid darkit" src="/logo-full.svg" alt="QiosQi">
       </a>
 
       <button class="btn btn-menu d-block d-md-none order-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDoks" aria-controls="offcanvasDoks" aria-label="Open main menu">
@@ -89,7 +89,7 @@
 </div>
 
 {{ if eq .Section "docs" -}}
-<nav class="doks-subnavbar py-2 sticky-lg-top{{ if eq .Site.Params.options.flexSearch false }} d-lg-none{{ end }}" aria-label="Secondary navigation">
+<nav class="doks-subnavbar sticky-top{{ if eq .Site.Params.options.flexSearch false }} d-lg-none{{ end }}" aria-label="Secondary navigation">
   <div class="container-xxl d-flex align-items-md-center">
 
     {{ if .Site.Params.options.flexSearch -}}
