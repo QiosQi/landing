@@ -1,13 +1,25 @@
 {{ define "main" }}
-<section class="section container-fluid mt-n3 pb-3">
-  <div class="row justify-content-center">
-    <div class="col-lg-12 text-center">
-      <h1 class="mt-0">{{ .Title }}</h1>
-    </div>
-    <div class="col-lg-9 col-xl-8 text-center">
-      <p class="lead">{{ .Params.lead | safeHTML }}</p>
-      <a class="btn btn-secondary btn-lg px-4 mb-2" href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}prologue/introduction/" role="button">Get Started</a>
-      <p class="meta">Open-source MIT Licensed. <a href="https://github.com/h-enk/doks">GitHub v{{ $data := getJSON "/package.json" }}{{ $data.version }}</a></p>
+<section class="section banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-16 col-md-8 mt-5 mt-md-0 d-flex align-items-center">
+        <div class="text-center w-100">
+          <h1 class="display-1 heading">{{ .Title | safeHTML }}</h1>
+          <p class="lead">{{ .Params.lead }}</p>
+
+        <div class="text-center">
+          <a href="https://app.qiosqi.com/#auth/social" class="btn btn-secondary btn-lg btn-secondary-head action-bar mt-2 me-3">Get Started Free</a>
+          
+          <a href="https://app.qiosqi.com/#auth/social" class="btn btn-light btn-lg btn-secondary-head action-bar mt-2">View Demo</a>
+          <!-- <div class="mt-2 info-support">
+            <i class="fas fa-check-circle"></i> <span>No credit-card required</span>
+          </div> -->
+        </div>
+      </div>
+      </div>
+      <div class="col-16 col-md-8  ">
+        <img class="hero-banner__image hero-banner__image--landscape" src="https://www.flipdish.com/imager/banners/2457621/IE-Pizzacafe-Portal-1440x800-2x_ba70c53f73b486e4404b9862f59e6e07.webp" srcset="/imager/banners/2457621/IE-Pizzacafe-Portal-1440x800-2x_f76ad2591825a91c6e2ce5ed6a691ecd.png 2x" alt="Online ordering system for restaurants">
+      </div>
     </div>
   </div>
 </section>

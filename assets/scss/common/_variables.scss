@@ -1,6 +1,6 @@
 // Color system
-$white: #fff;
-$black:    #000;
+$white:    #fff;
+$black:    #212121;
 
 $beige:    #fbf7f0;
 
@@ -11,8 +11,8 @@ $brown:    #aa9c84;
 $blue-300: #8ed6fb;
 $pink-100: #fcfaff;
 
-$primary: $blue;
-$secondary: $amber;
+$primary: $amber;
+$secondary: $blue;
 
 // copy
 $pink-500: #d32e9d;
@@ -43,13 +43,13 @@ $enable-negative-margins:     true;
 // Settings for the `<body>` element.
 
 $body-bg:                   $white;
-// $body-color:                $black;
+$body-color:                $black;
 
 // Links
 //
 // Style anchor elements.
 
-// $link-color:                              $primary;
+$link-color:                              $blue;
 $link-decoration:                         none;
 
 // Grid containers
@@ -87,7 +87,7 @@ $grid-row-columns:            6;
 // stylelint-disable value-keyword-case
 $font-family-sans-serif:      "Jost", -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-family-monospace:       sfmono-regular, menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace;
-// $font-family-base:            $font-family-sans-serif;
+$font-family-base:            $font-family-sans-serif;
 // stylelint-enable value-keyword-case
 
 $font-size-base:              1rem; // Assumes the browser default, typically `16px`

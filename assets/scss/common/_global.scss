@@ -9,6 +9,10 @@
   padding-bottom: 3rem;
 }
 
+.yellowtail {
+  font-family: "Yellowtail";
+}
+
 .content img {
   max-width: 100%;
 }
@@ -65,11 +69,6 @@ body.docs {
   .h6 {
     margin-bottom: 1.125rem;
   }
-}
-
-.home h1 {
-  /* font-size: calc(1.375rem + 1.5vw); */
-  font-size: calc(1.875rem + 1.5vw);
 }
 
 a:hover,
