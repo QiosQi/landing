@@ -1,4 +1,4 @@
-baseurl = "https://qiosqi.github.io/landing/"
+baseurl = "http://beta.qiosqi.com/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
