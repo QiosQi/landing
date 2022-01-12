@@ -27,68 +27,461 @@
 
 {{ define "sidebar-prefooter" }}
   {{ if eq $.Site.Language.LanguageName "English" }}
-  <section class="section section-sm">
+  
+
+  <!-- clients -->
+  <section class="section clients">
+
     <div class="container">
-      <div class="row justify-content-center text-center">
-        <div class="col-lg-5">
-          <h2 class="h4">Security aware</h2>
-          <p>Get A+ scores on <a href="https://observatory.mozilla.org/analyze/doks.netlify.app">Mozilla Observatory</a> out of the box. Easily change the default Security Headers to suit your needs.</p>
-        </div>
-        <div class="col-lg-5">
-          <h2 class="h4">Fast by default ⚡️</h2>
-          <p>Get 100 scores on <a href="https://googlechrome.github.io/lighthouse/viewer/?gist=92eaa982d7dbf92f94fe8ecc03987c9a">Google Lighthouse</a> by default. Doks removes unused css, prefetches links, and lazy loads images.</p>
-        </div>
-        <div class="col-lg-5">
-          <h2 class="h4">SEO-ready</h2>
-          <p>Use sensible defaults for structured data, open graph, and Twitter cards. Or easily change the SEO settings to your liking.</p>
-        </div>
-      </div>
-      <div class="row justify-content-center text-center">
-        <div class="col-lg-5">
-          <h2 class="h4">Full text search</h2>
-          <p>Search your Doks site with FlexSearch. Easily customize index settings and search options to your liking.</p>
-        </div>
-        <div class="col-lg-5">
-          <h2 class="h4">Page layouts</h2>
-          <p>Build pages with a landing page, blog, or documentation layout. Add custom sections and components to suit your needs.</p>
-        </div>
-        <div class="col-lg-5">
-          <h2 class="h4">Dark mode</h2>
-          <p>Switch to a low-light UI with the click of a button. Change colors with variables to match your branding.</p>
+      <div class="row">
+        <div class="col-16 mb-5 text-center">
+          <h2 class="section-title yellowtail display-4">Trusted by 1000's of restaurants around the world.</h2>
         </div>
       </div>
     </div>
+    <div class="o-section--feature-companies__logos d-flex flex-wrap justify-content-around">
+      <div class="c-logo-bar__item mb-5 mx-4">
+        <a class="t-blank-link" data-clog-click="" data-clog-ui-element="link_customer_stories" href="javascript:void(0);"
+          rel="noopener" title="Fox">
+          <img style="" alt="Fox" height="37" loading="lazy" class="lazyload"
+            src="https://a.slack-edge.com/ce67d/marketing/img/logos/company/_color/fox.png">
+        </a>
+      </div>
+      <div class="c-logo-bar__item mb-5 mx-4">
+        <a class="t-blank-link" data-clog-click="" data-clog-ui-element="link_customer_stories" href="javascript:void(0);"
+          rel="noopener" title="Lonely Planet">
+          <img style="" alt="Lonely Planet" height="37" loading="lazy" class="lazyload"
+            src="https://a.slack-edge.com/ce67d/marketing/img/logos/company/_color/lonelyplanet.png">
+        </a>
+      </div>
+      <div class="c-logo-bar__item mb-5 mx-4">
+        <a class="t-blank-link" data-clog-click="" data-clog-ui-element="link_customer_stories" href="javascript:void(0);"
+          rel="noopener" title="Intuit">
+          <img style="" alt="Intuit" height="37" loading="lazy" class="lazyload"
+            src="https://a.slack-edge.com/e2fa17/marketing/img/logos/company/_color/intuit.png">
+        </a>
+      </div>
+      <div class="c-logo-bar__item mb-5 mx-4">
+        <a class="t-blank-link" data-clog-click="" data-clog-ui-element="link_customer_stories" href="javascript:void(0);"
+          rel="noopener" title="Carvana">
+          <img style="" alt="Carvana" height="37" loading="lazy" class="lazyload"
+            src="https://a.slack-edge.com/ce67d/marketing/img/logos/company/_color/carvana.png">
+        </a>
+      </div>
+      <div class="c-logo-bar__item mb-5 mx-4">
+        <a class="t-blank-link" data-clog-click="" data-clog-ui-element="link_customer_stories" href="javascript:void(0);"
+          rel="noopener" title="Kiva">
+          <img style="" alt="Kiva" height="37" loading="lazy" class="lazyload"
+            src="https://a.slack-edge.com/ce67d/marketing/img/logos/company/_color/kiva.png">
+        </a>
+      </div>
+      <div class="c-logo-bar__item mb-5 mx-4">
+        <a class="t-blank-link" data-clog-click="" data-clog-ui-element="link_customer_stories" href="javascript:void(0);"
+          rel="noopener" title="Target">
+          <img style="max-width:50px" alt="Target" height="37" loading="lazy" class="lazyload"
+            src="https://a.slack-edge.com/80588/marketing/img/logos/company/_color/target-logo.png">
+        </a>
+      </div>
+      <div class="c-logo-bar__item mb-5 mx-4">
+        <a class="t-blank-link" data-clog-click="" data-clog-ui-element="link_customer_stories" href="javascript:void(0);"
+          rel="noopener" title="DevaCurl">
+          <img style="" alt="DevaCurl" height="37" loading="lazy" class="lazyload"
+            src="https://a.slack-edge.com/ce67d/marketing/img/logos/company/_color/devacurl.png">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- feature -->
+  {{ with .Params.feature }}
+  {{ if .enable }}
+  <section class="section features">
     <div class="container">
-      <div class="row justify-content-center text-center">
-        <div class="col-lg-5">
-          <h2 class="h4">Security aware</h2>
-          <p>Get A+ scores on <a href="https://observatory.mozilla.org/analyze/doks.netlify.app">Mozilla Observatory</a> out of the box. Easily change the default Security Headers to suit your needs.</p>
-        </div>
-        <div class="col-lg-5">
-          <h2 class="h4">Fast by default ⚡️</h2>
-          <p>Get 100 scores on <a href="https://googlechrome.github.io/lighthouse/viewer/?gist=92eaa982d7dbf92f94fe8ecc03987c9a">Google Lighthouse</a> by default. Doks removes unused css, prefetches links, and lazy loads images.</p>
-        </div>
-        <div class="col-lg-5">
-          <h2 class="h4">SEO-ready</h2>
-          <p>Use sensible defaults for structured data, open graph, and Twitter cards. Or easily change the SEO settings to your liking.</p>
+      <div class="row justify-content-center">
+        <div class="col-16 text-center">
+          <h2 class="section-title yellowtail display-4">One System To Rule Them All</h2>
         </div>
       </div>
-      <div class="row justify-content-center text-center">
-        <div class="col-lg-5">
-          <h2 class="h4">Full text search</h2>
-          <p>Search your Doks site with FlexSearch. Easily customize index settings and search options to your liking.</p>
+      <div class="row justify-content-center">
+        <div class="col-16 col-lg-12 mb-5">
+          <p class="f1-375">Streamline your operations, accept and manage every type of order,
+            eliminating the scope of human error, while also providing a more efficient and speedy service.</p>
         </div>
-        <div class="col-lg-5">
-          <h2 class="h4">Page layouts</h2>
-          <p>Build pages with a landing page, blog, or documentation layout. Add custom sections and components to suit your needs.</p>
+      </div>
+      <div class="row justify-content-center">
+        {{ range .feature_item }}
+        <div class="col-md-5 col-8 mb-4">
+          <div class="feature-card text-center shadow py-4 px-3 rounded">
+            {{ if .icon }}
+            <i class="{{.icon}} mb-3 f2-2"></i>
+            {{ end }}
+            {{ if .img }}
+            <img src="{{.img}}" class="delivery mb-2">
+            {{ end }}
+            <h3 class="mb-2">{{ .name | title }}</h3>
+            <p class="d-none d-md-inline">{{ .content | markdownify }}</p>
+          </div>
         </div>
-        <div class="col-lg-5">
-          <h2 class="h4">Dark mode</h2>
-          <p>Switch to a low-light UI with the click of a button. Change colors with variables to match your branding.</p>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  {{ end }}
+  <!-- /feature -->
+
+    <!-- website -->
+    <section class="section website">
+      <div class="container">
+        <div class="row">
+          <div class="col-16 text-center">
+            <h2 class="section-title yellowtail display-4 mb-5">Your Brand, Your Success</h2>
+          </div>
+          <div class="col-16 col-lg-8 order-lg-2">
+            <img class="main-web index-img" src="/images/front/designs.png" alt="websites">
+          </div>
+  
+          <div class="col-16 col-lg-8 d-flex align-items-center f1-375">
+            <div>
+              <div class="pt-4 pb-1">Create your own unique online ordering website with your brand. Get more orders out
+                the door,
+                a dashboard to track your sales growth and marketing tools to increase customer loyalty.</div>
+  
+              <div class="mb-4 mt-5">
+  
+                <span class="domain"> <i class="fas fa-lock me-2 locker"></i> <i>www.yourdomain.com</i> <span>
+              </div>
+  
+              <p>Easily connect your own domain name to your ordering website and get a free SSL certificate for secure
+                access and payments processing.</p>
+  
+              <div class="mb-4 mt-5 order-lg-1">
+                <div class="text-left w-100">
+                  <img class="lazyload" data-src="/images/front/brand/_pp_full.png" width="200" height="51" alt="paypal">
+                </div>
+                <div class="text-center d-none d-md-block   w-100">
+                  <img class="lazyload" data-src="/images/front/brand/_stripe_full.svg" width="170" height="81" alt="stripe">
+                </div>
+                <div class="text-end d-md-none  w-100">
+                  <img class="lazyload" data-src="/brands/_stripe_full.svg" width="170" height="81" alt="stripe">
+                </div>
+              </div>
+  
+              <div>No 30-day delays. Connect to your preferred payment gateway and get paid instantly. </div>
+              <div> Cut out the middleman and let you keep more of your profit margin.</div>
+  
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </section>
+    <!-- /website -->
+
+  <!-- service -->
+  <section class="section realtime">
+    <div class="container">
+      <div class="row">
+        <div class="col-16 text-center">
+          <h2 class="section-title yellowtail display-4 mb-5">Manage Everything in Real Time</h2>
+        </div>
+        <div class="col-lg-8 col-16 d-flex align-items-center f1-375">
+          <div class="w-100 accordion accordion-flush shadow" id="accordionFlushManage">
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="flush-manageOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseManageOne" aria-expanded="false" aria-controls="flush-collapseManageOne">
+                  Menu management
+                </button>
+              </h4>
+              <div id="flush-collapseManageOne" class="accordion-collapse collapse show" aria-labelledby="flush-manageOne"
+                data-bs-parent="#accordionFlushManage" data-index-name="menu">
+                <div class="accordion-body">
+                  <img style="width: 100%; margin-bottom: 15px;" class="d-lg-none" src="/images/front/menu.png" alt="manage bookings">
+                  Highly customizable menu, applying promos and allowing you to make instant adjustments and solve any
+                  potential issue.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="flush-manageTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseManageTwo" aria-expanded="false" aria-controls="flush-collapseManageTwo">
+                  Order management
+                </button>
+              </h4>
+              <div id="flush-collapseManageTwo" class="accordion-collapse collapse" aria-labelledby="flush-manageTwo"
+                data-bs-parent="#accordionFlushManage" data-index-name="order">
+                <div class="accordion-body">
+                  <img style="width: 100%; margin-bottom: 15px;" class="d-lg-none" src="/images/front/order.png" alt="manage bookings">
+                  Flexible order management dashboard allowing modify, search, print by
+                  following a progressive workflow.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="flush-manageThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseManageThree" aria-expanded="false" aria-controls="flush-collapseManageThree">
+                  Booking management
+                </button>
+              </h4>
+              <div id="flush-collapseManageThree" class="accordion-collapse collapse" aria-labelledby="flush-manageThree"
+                data-bs-parent="#accordionFlushManage" data-index-name="booking">
+                <div class="accordion-body">
+                  <img style="width: 100%; margin-bottom: 15px;" class="d-lg-none" src="/images/front/booking.png" alt="manage bookings">
+                  Stay in control of bookings, tables and time.
+                  The intelligent table management and the schedule view makes it easy to overcome busy days.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="flush-manageFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseManageFour" aria-expanded="false" aria-controls="flush-collapseManageFour">
+                  Statistics
+                </button>
+              </h4>
+              <div id="flush-collapseManageFour" class="accordion-collapse collapse" aria-labelledby="flush-manageFour"
+                data-bs-parent="#accordionFlushManage" data-index-name="stats">
+                <div class="accordion-body">
+                  <img style="width: 100%; margin-bottom: 15px;" class="d-lg-none" src="/images/front/stats.png" alt="manage bookings">
+                  Get insights immediately, monitor activity as it happens, see at once the
+                  bigger picture and react without delay.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 col-16 d-none d-lg-flex d-flex align-items-center">
+          <div class="w-100">
+            <img class="index-img radius" src="/images/front/menu.png" alt="manage bookings" id="managepic-port">
+          </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- /service -->
+
+
+  <!-- teamwork -->
+  <section class="section teamwork">
+    <div class="container">
+      <div class="row">
+        <div class="col-16 text-center">
+          <h2 class="section-title yellowtail display-4 mb-5">Get more things done, together</h2>
+        </div>
+        <div class="col-lg-8 col-16 d-none d-lg-flex d-flex align-items-center">
+          <div class="w-100 text-center">
+            <img class="d-none d-lg-inline index-img" src="/images/front/connect.png" alt="manage bookings" id="teampic-port">
+          </div>
+        </div>
+        <div class="col-lg-8 col-16 d-flex align-items-center f1-375">
+          <div>
+          <div class="mb-4">
+            <h3 class="text-center">One platform for your team</h3>
+          </div>
+          <div class="shadow w-100 accordion accordion-flush" id="accordionFlushTeam">
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="flush-teamOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTeamOne" aria-expanded="false" aria-controls="flush-collapseTeamOne">
+                  Connect
+                </button>
+              </h4>
+              <div id="flush-collapseTeamOne" class="accordion-collapse collapse show" aria-labelledby="flush-teamOne"
+                data-bs-parent="#accordionFlushTeam" data-index-name="connect">
+                <div class="accordion-body">
+                  <img style="width: 100%; margin-bottom: 15px;" class="d-lg-none" src="/images/front/connect-land.png" alt="manage bookings">
+                  Social login is designed to simplify sign-in and registration experience, providing a convenient account creation.                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="flush-teamFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTeamFour" aria-expanded="false" aria-controls="flush-collapseTeamFour">
+                  Organize
+                </button>
+              </h4>
+              <div id="flush-collapseTeamFour" class="accordion-collapse collapse" aria-labelledby="flush-teamFour"
+                data-bs-parent="#accordionFlushTeam" data-index-name="organize">
+                <div class="accordion-body">
+                  <img style="width: 100%; margin-bottom: 15px;" class="d-lg-none" src="/images/front/organize-land.png" alt="manage bookings">
+                  
+                  Build your team and give them access to monitor activity as it happens, see at once the
+                  bigger picture and react without delay.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="flush-teamTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTeamTwo" aria-expanded="false" aria-controls="flush-collapseTeamTwo">
+                  Collaborate
+                </button>
+              </h4>
+              <div id="flush-collapseTeamTwo" class="accordion-collapse collapse" aria-labelledby="flush-teamTwo"
+                data-bs-parent="#accordionFlushTeam" data-index-name="collaborate">
+                <div class="accordion-body">Check the queue and the status of the orders. 
+                  Team participates actively in the orders preparation and customers get the greatest experience.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /teamwork -->
+
+
+  <!-- for you -->
+  <section class="section foryou">
+    <div class="container">
+      <div class="row text-center">
+          <div class="col-16">
+            <h2 class="section-title yellowtail display-4 mb-5">Designed for restaurants and their people</h2>
+          </div>
+          <div class="col-16 f1-375">
+            <div class="mb-4">
+              <img class="lazyload" data-src="/images/front/doodle-counters/one.svg" width="43" height="40">
+              <p class="">We do not charge commissions % on your orders.<br> You get <strong>unlimited, commission-free</strong> orders.</p>
+            </div>
+            <div class="mb-4">
+              <img class="lazyload" data-src="/images/front/doodle-counters/two.svg" width="46" height="45">
+              <p class="">You get paid instantly to your PayPal or Bank
+                account.<br><strong>No 30-day delays.</strong></p>
+            </div>
+            <div class="mb-4">
+              <img class="lazyload" data-src="/images/front/doodle-counters/three.svg" width="46" height="52">
+              <p class="">You have <strong>100% ownership</strong> of
+                your customer data. We never email them, and <br> you can export the list any time you like.</p>
+            </div>
+            <div class="mb-4">
+              <img class="lazyload" data-src="/images/front/doodle-counters/four.svg" width="43" height="41">
+              <p class="">You get to <strong>talk to a human</strong> for help, or if you just like some advice <br>to hit the ground running.</p>
+            </div>
+          </div>
+          </div>
+        </div>
+  </section>
+
+  <section class="section testimonials">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-16 text-center">
+          <h2 class="section-title yellowtail display-4 mb-5">Our Clients Speak</h2>
+        </div>
+        <div class="col-16">
+          <div class="wrapper">
+
+            <div class="carousel">
+              <div>
+                <div class="testimonial">
+                  <div class="d-flex align-items-center justify-content-around w-100" style="height: 175px;">
+                    <img src="/images/front/clients/mexican.png" style="max-width: 150px;">
+                  </div>
+                  <blockquote class="shadow mb-0 px-3 py-5">
+                    We try to get our customers to order directly on our #QiosQi. We promote special discounts on our
+                    online menu and
+                    our sales were up 15% last month.</blockquote>
+                  <div class="arrowit"></div>
+                  <p class="d-flex">
+                    <img src="/images/front/faces/b2.png" width="60" height="60" alt="testimonial">
+                    <span class="ms-2 d-inline">
+                      <span class="d-block"> Hamid B.</span>
+                      <span class="d-block"> - Restaurant Owner</span>
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div class="testimonial">
+                  <div class="d-flex align-items-center justify-content-around w-100" style="
+                  height: 175px;
+              "><img src="/images/front/clients/mujut.png" style="max-width: 200px;"></div>
+                  <blockquote class="shadow mb-0 px-3 py-5">
+                    #QiosQi, the best partner for our takeaway and tables reservation. They helped me to increase the
+                    total orders & also migrate
+                    customers away from costly third party portals. </blockquote>
+                  <div class="arrowit"></div>
+                  <p class="d-flex">
+                    <img src="/images/front/faces/b1.png" width="60" height="60" alt="testimonial">
+                    <span class="ms-2 d-inline">
+                      <span class="me-2"> Christian M.</span>
+                      <span class="d-block"> - Restaurant Owner</span>
+                    </span>
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <div class="testimonial">
+                  <div class="d-flex align-items-center justify-content-around w-100" style="
+                  height: 175px;
+              "><img src="/images/front/clients/augustine.png" style="max-width: 200px;"></div>
+                  <blockquote class="shadow mb-0 px-3 py-5">
+                    #QiosQi enabled my customers to order for themselves in a very few amount of clicks. Eliminating the
+                    scope for human error, while also providing a more efficient and speedy service.</blockquote>
+                  <div class="arrowit"></div>
+                  <p class="d-flex">
+                    <img src="/images/front/faces/w1.png" width="60" height="60" alt="testimonial">
+                    <span class="ms-2 d-inline">
+                      <span class="me-2"> Suzan S.</span>
+                      <span class="d-block"> - Restaurant Owner</span>
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div class="testimonial">
+                  <div class="d-flex align-items-center justify-content-around w-100" style="
+                  height: 175px;
+              "><img src="/images/front/clients/italian.png" style="max-width: 200px;"></div>
+                  <blockquote class="shadow mb-0 px-3 py-5">
+                    Possibly the best software available to restaurants. Easy to setup, low cost, fantastic support,
+                    thank you #QiosQi!</blockquote>
+                  <div class="arrowit"></div>
+                  <p class="d-flex">
+                    <img src="/images/front/faces/b3.png" width="60" height="60" alt="testimonial">
+                    <span class="ms-2 d-inline">
+                      <span class="d-block"> Andrew L.</span>
+                      <span class="d-block"> - Restaurant Owner</span>
+                    </span>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- call to action -->
+  <section class="section cto bg-primary">
+    <div class="container">
+      <div class="row align-items-center justify-content-center text-center">
+        <div class="col-16">
+          <h2 class="section-title">Get started free</h2>
+        </div>
+        <div class="col-16">
+          <h5 class="display-5 mb-5">Fast setup. Manage everything. Cancel anytime.</h5>
+        </div>
+        {{ with .Params.banner }}
+        <div class="col-16 text-center">
+          {{ if .button.enable }}
+          {{ with .button }}
+            <a href="{{ .link | safeURL }}" class="btn btn-secondary btn-secondary-head action-bar">Continue</a>
+          {{ end }}
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  <!-- /call to action -->
+
   {{ end }}
 {{ end }}
 

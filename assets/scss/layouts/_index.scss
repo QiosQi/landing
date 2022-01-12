@@ -7,3 +7,50 @@ section.banner {
     background-size: cover;
 }
 
+.accordion-flush .accordion-item .accordion-button {
+    font-size: 1.35rem;
+    font-weight: 500;
+}
+
+.index-img {
+    max-height: 600px;
+
+    &.radius {
+        border-radius: 20px;
+    }
+}
+
+
+section.features {
+    .delivery {
+        width: 56px;
+        margin-top: -10px;
+    }
+
+    .f2-2 {
+        font-size: 2.2rem;
+    }
+}
+
+.f1-375 {
+    font-size: 1.375rem;
+}
+
+section.website {
+    overflow: hidden;
+
+    .domain {
+        border: 1px solid;
+        border-radius: 5px;
+        padding: 10px 20px;
+        background: #ffecb3;
+    
+        .locker {
+          color: #006400;
+        }
+      }
+}
+
+section.realtime {
+    overflow: hidden;
+}

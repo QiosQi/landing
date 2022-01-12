@@ -1,4 +1,4 @@
-baseurl = "http://beta.qiosqi.com/"
+baseurl = "https://beta.qiosqi.com/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
@@ -87,3 +87,6 @@ rel  = "sitemap"
   [[module.mounts]]
     source = "node_modules/mermaid"
     target = "assets/js/vendor/mermaid"
+  [[module.mounts]]
+    source = "./node_modules/@fortawesome/fontawesome-free/webfonts"
+    target = "static/webfonts"
