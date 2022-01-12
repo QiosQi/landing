@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://beta.qiosqi.com/sitemap.xml
+Sitemap: https://beta.qiosqi.com/sitemap.xml
