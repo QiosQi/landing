@@ -19,9 +19,6 @@
 /** Import KaTeX */
 @import "katex/dist/katex";
 
-/** Import slick */
-@import "slick-carousel/slick/slick.css";
-
 /** Import theme styles */
 @import "common/fonts";
 @import "common/global";
@@ -42,3 +39,8 @@
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/sidebar";
+
+
+/** Import slick keep-it at the end - cause of overwriten */
+@import "slick-carousel/slick/slick.scss";
+@import "components/slick.scss";

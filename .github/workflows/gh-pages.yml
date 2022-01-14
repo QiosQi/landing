@@ -5,7 +5,7 @@ on:
     branches:
       - pages  # Set a branch to deploy
   pull_request:
-
+    - pages
 jobs:
   deploy:
     runs-on: ubuntu-20.04
