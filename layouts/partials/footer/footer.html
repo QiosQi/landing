@@ -1,18 +1,48 @@
-<footer class="footer text-muted">
-  <div class="container-xxl">
+<footer class="section pb-0 pt-5">
+  <div class="container">
     <div class="row">
-      <div class="col-lg-8 order-last order-lg-first">
-        <ul class="list-inline">
-          <li class="list-inline-item">{{ .Site.Params.footer | safeHTML }}</li>
+      <div class="col-8 col-lg-4 mb-5">
+        <a class="d-block mb-3" href="{{ site.BaseURL }}"><img class="img-fluid" src="{{ site.Params.logoLight | relURL }}" alt="{{ site.Title }}" width="150"></a>
+        <p class="mb-4"><div>Restaurants Full Service.</div> <div>Give your team tools to stay in sync. </div> <div>Give your customers a perfect meal.</div></p>
+      </div>
+      <div class="col-8 col-lg-4 mb-5 sublinks">
+        <div class="h5 mb-3">Product</div>
+        <ul class="px-0">
+          <li><a href="/">Documentation</a></li>
+          <li><a href="/">Terms & Conditions</a></li>
+          <li><a href="/">Pricing</a></li>
+          <li><a href="/">Privacy</a></li>
         </ul>
       </div>
-      <div class="col-lg-8 order-first order-lg-last text-lg-end">
-        <ul class="list-inline">
-          {{ range .Site.Menus.footer -}}
-            <li class="list-inline-item"><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-          {{ end -}}
+      <div class="col-8 col-lg-4 mb-5 sublinks">
+        <div class="h5 mb-3">Why Us?</div>
+        <ul class="px-0">
+          <li><a href="/">QiosQi vs. Wix</a></li>
+          <li><a href="/">QiosQi vs. Square</a></li>
+          <li><a href="/">QiosQi vs. Gloriafood</a></li>
+          <li><a href="/">QiosQi vs. ChowNow</a></li>
+          <li><a href="/">QiosQi vs. Uber Eat</a></li>
+          <li><a href="/">QiosQi vs. Deliveroo</a></li>
         </ul>
       </div>
+      <div class="col-8 col-lg-4 mb-5 sublinks">
+        <div class="h5 mb-3">Company</div>
+        <ul class="px-0">
+          <li><a href="/">About</a></li>
+          <li><a href="/">Careers</a></li>
+          <li><a href="/">Blog</a></li>
+        </ul>
+      </div>
+
+    </div>
+    
+    <div class="border-top border-default pt-3 d-flex justify-content-between">
+      <ul class="list-inline social-icons m-0">
+        {{ range site.Menus.social }}
+        <li class="list-inline-item mb-3"><a href="{{ .URL | safeURL }}"><i class="fab fa-{{ .Name }}"></i></a></li>
+        {{ end }}
+      </ul>
+      <div class="pt-1">{{ site.Params.Copyright | markdownify }}</div>
     </div>
   </div>
 </footer>
