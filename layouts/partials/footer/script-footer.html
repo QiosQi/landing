@@ -1,6 +1,9 @@
 {{ $indexTemplate := resources.Get "js/index.js" -}}
 {{ $index := $indexTemplate | resources.ExecuteAsTemplate "index.js" . -}}
 
+{{ $frontTemplate := resources.Get "js/front.js" -}}
+{{ $front := $frontTemplate | resources.ExecuteAsTemplate "front.js" . -}}
+
 {{ $bs := resources.Get "js/bootstrap.js" -}}
 {{ $bs := $bs | js.Build -}}
 
@@ -9,6 +12,9 @@
 
 {{ $katex := resources.Get "js/vendor/katex/dist/katex.js" -}}
 {{ $katexAutoRender := resources.Get "js/vendor/katex/dist/contrib/auto-render.js" -}}
+
+{{ $jquery := resources.Get "js/vendor/jquery/dist/jquery.min.js" -}}
+{{ $slick := resources.Get "js/vendor/slick-carousel/slick/slick.min.js" -}}
 
 {{ $mermaid := resources.Get "js/mermaid.js" | js.Build -}}
 
@@ -78,11 +84,17 @@
   {{ if and (.Site.Params.options.flexSearch) (eq .Section "docs") -}}
     <script src="{{ $index.RelPermalink }}" defer></script>
   {{ end -}}
+  <script src="{{ $jquery.RelPermalink }}" defer></script>
+  <script src="{{ $slick.RelPermalink }}" defer></script>
+  <script src="{{ $front.RelPermalink }}" defer></script>
 {{ else -}}
   {{ $js := $js | minify | fingerprint "sha512" -}}
   {{ $index := $index | minify | fingerprint "sha512" -}}
+  {{ $front := $front | minify | fingerprint "sha512" -}}
   {{ $bs := $bs | minify | fingerprint "sha512" -}}
   {{ $highlight := $highlight | minify | fingerprint "sha512" -}}
+  {{ $jquery := $jquery | fingerprint "sha512" -}}
+  {{ $slick := $slick | fingerprint "sha512" -}}
   {{ $katex := $katex | minify | fingerprint "sha512" -}}
   {{ $katexAutoRender := $katexAutoRender | minify | fingerprint "sha512" -}}
   {{ $mermaid := $mermaid | minify | fingerprint "sha512" -}}
@@ -103,4 +115,7 @@
   {{ if and (.Site.Params.options.flexSearch) (eq .Section "docs") -}}
     <script src="{{ $index.Permalink }}" integrity="{{ $index.Data.Integrity }}" crossorigin="anonymous" defer></script>
   {{ end -}}
+  <script src="{{ $jquery.Permalink }}" integrity="{{ $jquery.Data.Integrity }}" crossorigin="anonymous" defer></script>
+  <script src="{{ $slick.Permalink }}" integrity="{{ $slick.Data.Integrity }}" crossorigin="anonymous" defer></script>
+  <script src="{{ $front.Permalink }}" integrity="{{ $front.Data.Integrity }}" crossorigin="anonymous" defer></script>
 {{ end -}}

@@ -8,6 +8,7 @@ enableRobotsTXT = true
 languageCode = "en-US"
 paginate = 7
 rssLimit = 10
+googleAnalytics = "G-QCN8ZYY0ZJ"
 
 # Multilingual
 defaultContentLanguage = ["en"]
@@ -84,6 +85,12 @@ rel  = "sitemap"
   [[module.mounts]]
     source = "node_modules/katex"
     target = "assets/js/vendor/katex"
+  [[module.mounts]]
+    source = "node_modules/slick-carousel"
+    target = "assets/js/vendor/slick-carousel"
+  [[module.mounts]]
+    source = "node_modules/jquery"
+    target = "assets/js/vendor/jquery"
   [[module.mounts]]
     source = "node_modules/mermaid"
     target = "assets/js/vendor/mermaid"
