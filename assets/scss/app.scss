@@ -40,7 +40,6 @@
 @import "layouts/posts";
 @import "layouts/sidebar";
 
-
 /** Import slick keep-it at the end - cause of overwriten */
 @import "slick-carousel/slick/slick.scss";
-@import "components/slick.scss";
+@import "components/slick";
