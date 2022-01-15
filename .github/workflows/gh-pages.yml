@@ -10,3 +10,6 @@ jobs:
     environment: 
       name: staging
       url: https://beta.qiosqi.com
+    steps:
+      - name: Deploy to Github Pages
+        uses: actions/deploy-pages@v1-beta
