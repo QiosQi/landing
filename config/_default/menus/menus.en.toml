@@ -23,12 +23,12 @@
 
 [[main]]
   name = "Pricing"
-  url = "/blog/"
+  url = "/pricing/"
   weight = 30
 
 [[main]]
   name = "Contact Us"
-  url = "/blog/"
+  url = "/contact/"
   weight = 40
 
 [[social]]
