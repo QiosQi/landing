@@ -2,26 +2,26 @@
 <div class="wrap container-xxl" role="document">
 	<div class="content">
 		<div class="row justify-content-center">
-			<div class="col-md-12 col-lg-10 col-xl-8">
-				<article>
-				<h1 class="text-center">{{ .Title }}</h1>
+			<div class="col-16 text-center">
+				<h1 class="display-4 yellowtail mt-4 text-center">{{ .Title }}</h1>
 				<div class="text-center">{{ .Content }}</div>
-						<div class="card-list">
-							{{ $paginator := .Paginate (.Data.Pages) -}}
-							{{ range $paginator.Pages -}}
-								<div class="card">
-									<div class="card-body">
-										<h2 class="h3"><a class="stretched-link text-body" href="{{ .RelPermalink }}">{{ .Params.title }}</a></h2>
-										<p>{{ .Params.lead | safeHTML }}</p>
-										{{ partial "main/blog-meta.html" . -}}
-									</div>
-								</div>
-							{{ end -}}
-							{{ $.Scratch.Set "paginator" true }}
-							{{ template "_internal/pagination.html" . }}
-						</div>
-				</article>
 			</div>
+
+			{{ $paginator := .Paginate (.Data.Pages) -}}
+			{{ range $paginator.Pages -}}
+			<div class="col-lg-5 col-sm-8 mb-3 card-list">
+				<div class="card">
+					<div class="card-body">
+						<h2 class="h3"><a class="stretched-link text-body" href="{{ .RelPermalink }}">{{ .Params.title
+								}}</a></h2>
+						<p>{{ .Params.lead | safeHTML }}</p>
+						{{ partial "main/blog-meta.html" . -}}
+					</div>
+				</div>
+			</div>
+			{{ end -}}
+			{{ $.Scratch.Set "paginator" true }}
+			{{ template "_internal/pagination.html" . }}
 		</div>
 	</div>
 </div>
