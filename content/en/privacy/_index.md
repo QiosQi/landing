@@ -31,7 +31,7 @@ We run [Plausible](https://plausible.io/) analytics on getdoks.org. The followin
 
 ## Contact us
 
-[Contact us]({{< relref "contact/index.md" >}}) if you have any questions.
+[Contact us]({{< relref "contact/_index.md" >}}) if you have any questions.
 
 Effective Date: _27th August 2020_
 
@@ -40,9 +40,9 @@ Effective Date: _27th August 2020_
 Privacy Policy
 Last update: June 4th 2021
 This document is currently only available in English, please write us at @@@ if there is anything you do not understand or need translated to your native language.
-This document describes QiosQi' use and protection of your personal data. QiosQi ApS is the company behind QiosQi available at qiosqi.com, app.qiosqi.com and the QiosQi native mobile apps for iOS and Android. 
+This document describes QiosQi' use and protection of your personal data. QiosQi Sarl is the company behind QiosQi available at qiosqi.com, app.qiosqi.com and the QiosQi native mobile apps for iOS and Android. 
 
-Following mentions QiosQi ApS, QiosQi, our websites, domain and apps, as "QiosQi".
+Following mentions QiosQi Sarl, QiosQi, our websites, domain and apps, as "QiosQi".
 
 When you visit QiosQi, one of our domains or one of our apps will automatically collect data about your visit. This could for example be regarding which pages you open up, if you have been on that page before, and which website or search-engine you came from.
 

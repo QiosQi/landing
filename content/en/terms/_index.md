@@ -31,7 +31,7 @@ We run [Plausible](https://plausible.io/) analytics on getdoks.org. The followin
 
 ## Contact us
 
-[Contact us]({{< relref "contact/index.md" >}}) if you have any questions.
+[Contact us]({{< relref "contact/_index.md" >}}) if you have any questions.
 
 Effective Date: _27th August 2020_
 
@@ -42,7 +42,7 @@ Last update: June 4th 2021
 This document is currently only available in English, please write us at @@@ if there is anything you do not understand or need translated to your native language.
 
 This is the Terms and Conditions for the use of QiosQi available at qiosqi.com, app.qiosqi.com and the QiosQi native mobile apps for iOS and Android.
-The following mentions QiosQi ApS, QiosQi, our website domains and apps as solely "QiosQi".
+The following mentions QiosQi Sarl, QiosQi, our website domains and apps as solely "QiosQi".
 Users and customers of QiosQi are referred to as the client, customer, restaurant or user.
 We are basically only interested in providing our customers and partners a super good experience, but to ensure the legal aspects, we have summarized some trading terms and conditions.
 The conditions in this document as well as any documents that we link to from here, apply to the use of and all agreements we enter into at any of our systems, websites and apps, with QiosQi Sarl, Luxembourg, company registration number, as the company behind it all.

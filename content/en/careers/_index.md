@@ -29,7 +29,7 @@ We want to help you succeed—it’s that simple. We offer comprehensive support
 
 
 
-ChowNow will always be a mission-first company. And just as we believe in the importance of community, we value every individual person on our team. Our talent makes us who we are and I’m proud of all the different places we come from. Every voice matters and every voice brings something new to the table. As a company, we’re always changing, but our beliefs remain steadfast. We’re always looking for opportunities to care for our team, whether that’s embracing fresh perspectives, or adapting to whatever curveballs life throws our way. Once you join ChowNow, we’re invested in you. We want you to succeed—it’s that simple. Because when you grow, we grow.
+QiosQi will always be a mission-first company. And just as we believe in the importance of community, we value every individual person on our team. Our talent makes us who we are and I’m proud of all the different places we come from. Every voice matters and every voice brings something new to the table. As a company, we’re always changing, but our beliefs remain steadfast. We’re always looking for opportunities to care for our team, whether that’s embracing fresh perspectives, or adapting to whatever curveballs life throws our way. Once you join QiosQi, we’re invested in you. We want you to succeed—it’s that simple. Because when you grow, we grow.
 
 
 

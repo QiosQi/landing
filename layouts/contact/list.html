@@ -2,10 +2,10 @@
 <div class="wrap container-xxl" role="document">
 	<div class="content">
 		<div class="row justify-content-center">
-			<div class="col-md-12 col-lg-10 col-xl-8">
+			<div class="col-md-12 col-lg-10">
 				<article>
-				<h1 class="text-center">{{ .Title }}</h1>
-				<div class="text-center">{{ .Content }}</div>
+					<h1 class="display-4 yellowtail mt-5 text-center">{{ .Title }}</h1>
+					<div class="py-4">{{ .Content }}</div>
 						<div class="card-list">
 							{{ range .Data.Pages -}}
 								<div class="card">

@@ -2,14 +2,16 @@
 <div class="wrap container-xxl" role="document">
   <div class="content">
     <div class="row justify-content-center">
-      <div class="col-md-12 col-lg-10 col-xl-8">
+      <div class="col-md-12 col-lg-10">
         <article>
           <div class="blog-header">
-            <h1>{{ .Title }}</h1>
+            <h1 class="display-5 mt-4 text-center">{{ .Title }}</h1>
             {{ partial "main/blog-meta.html" . }}
           </div>
           <p class="lead">{{ .Params.lead | safeHTML }}</p>
-          {{ .Content }}
+          <div class="py-4">
+            {{ .Content }}
+          </div>
         </article>
       </div>
     </div>
