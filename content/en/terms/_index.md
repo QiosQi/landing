@@ -1,6 +1,6 @@
 ---
-title: Privacy Policy
-description: Cookies and personal data.
+title: Terms & Conditions
+description: Agreement
 date: 2020-08-27T19:23:18.000+02:00
 lastmod: 2020-08-27T19:23:18.000+02:00
 images: []
