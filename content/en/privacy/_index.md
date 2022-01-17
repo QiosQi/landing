@@ -6,35 +6,9 @@ lastmod: 2020-08-27T19:23:18.000+02:00
 images: []
 
 ---
-**TLDR**: We do not use cookies and we do not collect any personal data.
-
-## Website visitors
-
-* No personal information is collected.
-* No information is stored in the browser.
-* No information is shared with, sent to or sold to third-parties.
-* No information is shared with advertising companies.
-* No information is mined and harvested for personal and behavioral trends.
-* No information is monetized.
-
-### Information we collect and what we use it for
-
-We run [Plausible](https://plausible.io/) analytics on getdoks.org. The following information is collected:
-
-* **Page URL**. We track the page URL of each page view on this website. We use this to understand which pages have been viewed and how many times a particular page has been viewed. For example: _https://getdoks.org/_.
-* **HTTP Referrer**. We use the referrer string to understand the number of visitors referred to this website from links on other sites. For example: _https://github.com/_.
-* **Browser**. We use this to understand what browsers people use when visiting this website. This is derived from the User-Agent HTTP header. The full User-Agent is discarded. For example: _Chrome_.
-* **Operating system**. We use this to understand what operating systems people use when visiting this website. We only use the brand of the operating system and don’t include the version number or any other details. This is derived from the User-Agent HTTP header. The full User-Agent is discarded. For example: _GNU/Linux_.
-* **Device type**. We use this to understand what devices people use when visiting this website. This is derived from window.innerWidth. The actual width of the browser in pixels is discarded. For example: _Desktop_.
-* **Visitor Country**. We look up the visitor’s country using the IP address. We do not track anything more granular than the country of origin and the IP address of the visitor is discarded. We never store IP addresses in our database or logs. For example: _Canada_.
-
-## Contact us
-
-[Contact us]({{< relref "contact/_index.md" >}}) if you have any questions.
-
 Effective Date: _27th August 2020_
 
-Privacy Policy
+**Privacy Policy**
 Last update: June 4th 2021
 This document is currently only available in English, please write us at @@@ if there is anything you do not understand or need translated to your native language.
 This document describes QiosQi' use and protection of your personal data. QiosQi Sarl is the company behind QiosQi available at qiosqi.com, app.qiosqi.com and the QiosQi native mobile apps for iOS and Android.
@@ -45,7 +19,7 @@ When you visit QiosQi, one of our domains or one of our apps will automatically 
 
 It is a requirement that you must be 13 years old to be able to use QiosQi.
 
-Data collected automatically
+**Data collected automatically**
 The data that we automatically collect from your visit is not personal. In other words, the data is not used to identify you as a person, but is used to follow the tendencies in consumer behaviour in general.
 
 In the following, you can read how we collect data from your visit, why we do it and how your information is protected
@@ -54,9 +28,9 @@ Each time you visit one or more of our websites, we automatically collect inform
 
 These include among others:
 
-* Which webpage did you visit first If you've been here before 
-* The duration of your visit 
-* Which webpage you came from 
-* Which keywords you used in the search engine 
+* Which webpage did you visit first If you've been here before
+* The duration of your visit
+* Which webpage you came from
+* Which keywords you used in the search engine
 * Which pages you visit IP address of your visit
 * Operating system, browser type and version
