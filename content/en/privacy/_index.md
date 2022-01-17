@@ -6,8 +6,6 @@ lastmod: 2020-08-27T19:23:18.000+02:00
 images: []
 
 ---
-Effective Date: _27th August 2020_
-
 **Privacy Policy**
 Last update: June 4th 2021
 This document is currently only available in English, please write us at @@@ if there is anything you do not understand or need translated to your native language.
