@@ -2,24 +2,96 @@
 <div class="wrap container-xxl" role="document">
 	<div class="content">
 		<div class="row justify-content-center">
-			<div class="col-md-12 col-lg-10">
-				<article>
-					<h1 class="display-4 yellowtail mt-5 text-center">{{ .Title }}</h1>
-					<div class="py-4">{{ .Content }}</div>
-						<div class="card-list">
-							{{ range .Data.Pages -}}
-								<div class="card">
-									<div class="card-body">
-										<h2 class="h3"><a class="stretched-link text-body" href="{{ .RelPermalink }}">{{ .Params.title }}</a></h2>
-										{{ if eq .Section "blog" -}}
-											<p>{{ .Params.lead | safeHTML }}</p>
-											{{ partial "main/blog-meta.html" . -}}
-										{{ end -}}
-									</div>
-								</div>
-							{{ end -}}
-						</div>
-				</article>
+			<div class="col-16">
+				<h1 class="display-4 yellowtail mt-5 text-center">{{ .Title }}</h1>
+			</div>
+			<div class="col-16">
+				<h2 class=" my-5 text-center">Make teamwork more productive</h2>
+			</div>
+
+			<div class="col-5 mb-5 aos-init aos-animate" data-aos="fade-up">
+				<div class="card p-0 p-sm-3">
+					<div class="card-body">
+						<h2 class="mt-2 text-center">Solo</h2>
+						<h5 class="mt-0 text-center">$0, free forever</h5>
+						<a class="w100 btn btn-outline-secondary btn-lg btn-block mt-4" href="" role="button">Get
+							Started Free</a>
+						<ul class="pricing-feature-list mt-5">
+							<li>
+								<i class="fas fa-check me-2"></i>
+								<span>Connect to the network</span>
+							</li>
+							<li>
+								<i class="fas fa-check me-2"></i>
+								<span>Start accepting Orders</span>
+							</li>
+							<li>
+								<i class="fas fa-check me-2"></i>
+								<span>Build your online website</span>
+							</li>
+							<li>
+								<i class="fas fa-check me-2"></i>
+								<span>Enable online Reservation</span>
+							</li>
+							<li>
+								<i class="fas fa-check me-2"></i>
+								<span>View, assign and respond to tickets</span>
+							</li>
+
+							<li style="color:#6d7383;">
+								<i class="fas fa-times me-2"></i>
+								<span class="text-muted">Accept online payments</span>
+							</li>
+							<li style="color:#6d7383;">
+								<i class="fas fa-times me-2"></i>
+								<span class="text-muted">Register custom domain</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-5 mb-5 aos-init aos-animate" data-aos="fade-up">
+				<div class="card p-0 p-sm-3">
+					<div class="card-body">
+						<h2 class="mt-2 text-center">Business</h2>
+						<h5 class="mt-0 text-center">$49/month</h5>
+						<a class="w100 btn btn-outline-secondary btn-lg btn-block mt-4" href="" role="button">Get
+							Started Free</a>
+						<ul class="pricing-feature-list mt-5">
+							<li>
+								<i class="fas fa-check me-2"></i>
+								<span>View, assign and respond to tickets</span>
+							</li>
+
+							<li style="color:#6d7383;">
+								<i class="fas fa-times me-2"></i>
+								<span class="text-muted">Agent seat and role management</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-5 mb-5 aos-init aos-animate" data-aos="fade-up">
+				<div class="card p-0 p-sm-3">
+					<div class="card-body">
+						<h2 class="mt-2 text-center">Enterprise</h2>
+						<h5 class="mt-0 text-center">Custom Pricing</h5>
+						<a class="w100 btn btn-outline-secondary btn-lg btn-block mt-4" href="" role="button">Contact Sales</a>
+						<ul class="pricing-feature-list mt-5">
+							<li>
+								<i class="fas fa-check me-2"></i>
+								<span>View, assign and respond to tickets</span>
+							</li>
+
+							<li style="color:#6d7383;">
+								<i class="fas fa-times me-2"></i>
+								<span class="text-muted">Agent seat and role management</span>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -1,26 +1,113 @@
 {{ define "main" }}
 <div class="wrap container-xxl" role="document">
-	<div class="content">
+	<div class="content contactus">
 		<div class="row justify-content-center">
-			<div class="col-md-12 col-lg-10">
-				<article>
-					<h1 class="display-4 yellowtail mt-5 text-center">{{ .Title }}</h1>
-					<div class="py-4">{{ .Content }}</div>
-						<div class="card-list">
-							{{ range .Data.Pages -}}
-								<div class="card">
-									<div class="card-body">
-										<h2 class="h3"><a class="stretched-link text-body" href="{{ .RelPermalink }}">{{ .Params.title }}</a></h2>
-										{{ if eq .Section "blog" -}}
-											<p>{{ .Params.lead | safeHTML }}</p>
-											{{ partial "main/blog-meta.html" . -}}
-										{{ end -}}
-									</div>
-								</div>
-							{{ end -}}
-						</div>
-				</article>
+			<div class="col-16 col-md-8 d-flex align-items-center intouch">
+				<div>
+					<article>
+						<h1 class="display-4 yellowtail mb-5 mt-5 mt-md-0 text-center">{{ .Title }}</h1>
+					</article>
+					<div>Get in touch with our team to know more about QiosQi</div>
+					<ul>
+						<li>
+							Ask any question you might have about the product or your requirements
+						</li>
+						<li>
+							Talk through special requirements such as visitor authentication or onboarding large teams
+							and
+							migrating from other solutions
+						</li>
+						<li>
+							Contact us about volume pricing discounts
+						</li>
+						<li>
+							Explore use cases for your team and learn how to increase team productivity
+						</li>
+					</ul>
+				</div>
 			</div>
+			<div class="col-16 col-md-8 infoform my-5">
+				<form name="contact" method="POST" id="contact-form"
+					action="https://us-central1-solid-outlook-270109.cloudfunctions.net/contactSubmit">
+					<div class="row">
+						<div class="col-8 pe-2">
+							<div class="form-group mt-4">
+								<label class="">First Name</label>
+								<input type="text" placeholder="e.g. Doria" name="first" class="form-control" required>
+							</div>
+						</div>
+						<div class="col-8 ps-2">
+							<div class="form-group mt-4">
+								<label class="">Last Name</label>
+								<input type="text" placeholder="e.g. Estaria" name="last" class="form-control" required>
+							</div>
+						</div>
+						<div class="col-16">
+							<div class="form-group mt-4">
+								<label class="">Email</label>
+								<input type="email" placeholder="e.g. contact@company.com" name="email"
+									class="form-control" required>
+							</div>
+						</div>
+						<div class="col-16">
+							<div class="form-group mt-4">
+								<label class="">Phone Number</label>
+								<input type="phone" placeholder="e.g. +1 555 555 555" name="phone" class="form-control"
+									required>
+							</div>
+						</div>
+						<div class="col-8 pe-2">
+							<div class="form-group mt-4">
+								<label class="">Use Case</label>
+								<select class="form-select" aria-label="Default select example">
+									<option selected>Choose Use Case</option>
+									<option value="ordering">Ordering</option>
+									<option value="reservation">Reservation</option>
+									<option value="pick">Pick up</option>
+									<option value="delivery">Delivery</option>
+									<option value="takeaway">Takeaway</option>
+									<option value="self">Self Service</option>
+									<option value="translation">Translation</option>
+									<option value="other">Other</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-8 ps-2">
+							<div class="form-group mt-4">
+								<label class="">Business Type</label>
+								<select class="form-select" aria-label="Default select example">
+									<option value="resto" selected>Restaurant</option>
+									<option value="cafes">Café</option>
+									<option value="quick">Quick Service Restaurant</option>
+									<option value="bar">Bar</option>
+									<option value="takeaway">Takeaway</option>
+									<option value="chain">Chain and Franchise</option>
+									<option value="hotel">Hotel</option>
+									<option value="grocery">Grocery Business</option>
+									<option value="dark">Dark Kitchens</option>
+									<option value="kits">Meal Kits</option>
+									<option value="drive">Drive Thru</option>
+									<option value="hall">Food Hall</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-16">
+							<div class="form-group mt-4">
+								<label class="">Tell us a bit more?</label>
+								<textarea rows="3"
+									placeholder="What challenges are you looking to overcome with QiosQi?"
+									name="message" class="form-control" required></textarea>
+							</div>
+						</div>
+						<div class="col-16">
+							<button type="submit" class="w100 my-4 g-recaptcha btn btn-block btn-primary"
+								data-callback='onSubmit' data-action='submit'
+								data-sitekey="6Lcrex0eAAAAAPU3sq5T2iIt1iST_a83dfP7MMy6">Contact Us</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
 		</div>
 	</div>
 </div>
