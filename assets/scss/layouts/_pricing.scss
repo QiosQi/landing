@@ -8,4 +8,49 @@
             width: 100%;
         }
     }
+
+    .compare {
+        font-weight: 400;
+        font-size: 150%;
+        padding-top: 80px;
+    }
+
+    .more-details {
+        tr.spot:hover {
+            background: #ddd;
+        }
+
+        .th {
+            width: 24%;
+            border-top: 1px solid #dee2e6;
+        }
+        .aside {
+            text-align: left;
+            font-weight: 400;
+
+            &.top {
+                font-size: 110%;
+                font-weight: 500;
+            }
+        }
+
+        .features {
+            font-weight: 400;
+            text-align: left;
+        }
+        td.tick,
+        th.tick {
+            border-bottom: 1px solid #dee2e6 !important;
+            border-left: 1px solid #dee2e6 !important;
+            border-right: 1px solid #dee2e6 !important;
+            vertical-align: middle;
+        }
+
+        td.tock,
+        th.tock {
+            border-left: 1px solid #dee2e6 !important;
+            border-right: 1px solid #dee2e6 !important;
+            vertical-align: middle;
+        }
+    }
 }

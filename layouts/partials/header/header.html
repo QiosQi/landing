@@ -2,7 +2,13 @@
   {{ partial "header/alert.html" . }}
 {{ end -}}
 
+{{ if eq .Section "docs" -}}
+<div class="">
+{{ else }}
 <div class="sticky-top">
+{{ end }}
+
+
   <div class="header-bar"></div>
   <header class="navbar navbar-expand-md navbar-light doks-navbar">
     <nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation">
@@ -21,25 +27,55 @@
           <button type="button" class="btn-close text-reset me-2" data-bs-dismiss="offcanvas" aria-label="Close main menu"></button>
         </div>
         <div class="offcanvas-body px-4">
-          <h3 class="h6 text-uppercase mb-3 d-md-none">Main</h3>
+          <!-- <h3 class="h6 text-uppercase mb-3 d-md-none">Main</h3> -->
           <ul class="nav flex-column flex-md-row ms-md-n3">
+            <li class="nav-item dropdown d-none d-md-block">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                <span>Learn</span><i class="fas fa-chevron-down ms-2" style="font-size: 14px"></i>
+              </a>
+              <ul class="dropdown-menu">
+                {{- $current := . -}}
+                {{ range .Site.Menus.learn -}}
+                  {{- $active := or ($current.IsMenuCurrent "learn" .) ($current.HasMenuCurrent "learn" .) -}}
+                  {{- $active = or $active (eq .Name $current.Title) -}}
+                  {{- $active = or $active (and (eq .Name "Documentation") (eq $current.Section "docs")) -}}
+                  {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "authors")) -}}
+                  <li class="nav-item">
+                    <a class="nav-link f1-125 {{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+                  </li>
+                  {{ end -}}
+              </ul>
+            </li>
+            {{- $current := . -}}
+            {{ range .Site.Menus.learn -}}
+              {{- $active := or ($current.IsMenuCurrent "learn" .) ($current.HasMenuCurrent "learn" .) -}}
+              {{- $active = or $active (eq .Name $current.Title) -}}
+              {{- $active = or $active (and (eq .Name "Documentation") (eq $current.Section "docs")) -}}
+              {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "authors")) -}}
+              
+              <li class="nav-item d-md-none">
+                <a class="nav-link {{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+              </li>
+              
+            {{ end -}}
+
             {{- $current := . -}}
             {{ range .Site.Menus.main -}}
               {{- $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) -}}
               {{- $active = or $active (eq .Name $current.Title) -}}
-              {{- $active = or $active (and (eq .Name "Documentation") (eq $current.Section "docs")) -}}
               {{- $active = or $active (and (eq .Name "Pricing") (eq $current.Section "pricing")) -}}
-              {{- $active = or $active (and (eq .Name "Contact") (eq $current.Section "contact")) -}}
-              {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "authors")) -}}
+              {{- $active = or $active (and (eq .Name "Contact Us") (eq $current.Section "contact")) -}}
+              
               <li class="nav-item">
                 <a class="nav-link {{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
               </li>
+              
             {{ end -}}
           </ul>
           <hr class="text-black-50 my-4 d-md-none">
           <!-- <h3 class="h6 text-uppercase mb-3 d-md-none">Socials</h3> -->
-          <ul class="nav flex-column flex-md-row ms-md-auto me-md-n5 pe-md-2">
-            <li class="nav-item">
+          <ul class="nav flex-column flex-md-row ms-md-auto me-md-n5 pe-sm-2 pe-md-1 pe-lg-2">
+            <li class="nav-item ms-md-0">
               <a class="nav-link " href="https://app.qiosqi.com">Sign In</a>
             </li>
             <li class="nav-item">
@@ -90,7 +126,7 @@
 </div>
 
 {{ if eq .Section "docs" -}}
-<nav class="doks-subnavbar sticky-top{{ if eq .Site.Params.options.flexSearch false }} d-lg-none{{ end }}" aria-label="Secondary navigation">
+<nav class="doks-subnavbar sticky-lg-top{{ if eq .Site.Params.options.flexSearch false }} d-lg-none{{ end }}" aria-label="Secondary navigation">
   <div class="container-xxl d-flex align-items-md-center">
 
     {{ if .Site.Params.options.flexSearch -}}

@@ -10,13 +10,13 @@
   identifier = "help"
   url = "/docs/help/"
 
-[[main]]
+[[learn]]
   name = "Documentation"
   url = "/docs/prologue/introduction/"
 # url = "/docs/1.0/prologue/introduction/"
   weight = 10
 
-[[main]]
+[[learn]]
   name = "Blog"
   url = "/blog/"
   weight = 20
