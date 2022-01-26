@@ -6,11 +6,17 @@
 				<h1 class="display-4 yellowtail mt-5 text-center">{{ .Title }}</h1>
 				<div class="text-center">{{ .Content }}</div>
 			</div>
-
+			{{ $.Scratch.Set "paginator" true }}
+			<div class="d-flex justify-content-center mt-5">
+				{{ template "_internal/pagination.html" . }}
+			</div>
 			{{ $paginator := .Paginate (.Data.Pages) -}}
-			{{ range $paginator.Pages -}}
+			{{ range $index, $element := $paginator.Pages -}}
+			{{ if ne $index 0 }}
 			<div class="col-lg-5 col-sm-8 mb-3 card-list">
 				<div class="card">
+					{{ $image1 := index (.Params.images) 0 }}
+					<img src="{{ .RelPermalink }}{{ $image1 }}" alt="{{ .Title }}" class="card-img rounded-lg mb-4">
 					<div class="card-body">
 						<h2 class="h3"><a class="stretched-link text-body" href="{{ .RelPermalink }}">{{ .Params.title
 								}}</a></h2>
@@ -19,9 +25,29 @@
 					</div>
 				</div>
 			</div>
+			{{ else }}
+			<div class="col-lg-15 mb-3 card-list">
+				<div class="d-flex ">
+					<div style="width: 50%;">
+						{{ $image1 := index (.Params.images) 0 }}
+						<img src="{{ .RelPermalink }}{{ $image1 }}" alt="{{ .Title }}" class="card-img rounded-lg mb-4">
+					</div>
+					<div class="card" style="width: 50%;">
+						<div class="card-body">
+							<h2 class="h3"><a class="stretched-link text-body" href="{{ .RelPermalink }}">{{ .Params.title
+									}}</a></h2>
+							<p>{{ .Params.lead | safeHTML }}</p>
+							{{ partial "main/blog-meta.html" . -}}
+						</div>
+					</div>
+				</div>
+			</div>
+			{{ end }}
 			{{ end -}}
 			{{ $.Scratch.Set "paginator" true }}
-			{{ template "_internal/pagination.html" . }}
+			<div class="d-flex justify-content-center mt-5">
+				{{ template "_internal/pagination.html" . }}
+			</div>
 		</div>
 	</div>
 </div>

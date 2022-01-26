@@ -11,15 +11,16 @@
   url = "/docs/help/"
 
 [[learn]]
-  name = "Documentation"
-  url = "/docs/prologue/introduction/"
-# url = "/docs/1.0/prologue/introduction/"
+  name = "Blog"
+  url = "/blog/"
   weight = 10
 
 [[learn]]
-  name = "Blog"
-  url = "/blog/"
+  name = "Documentation"
+  url = "/docs/prologue/introduction/"
+# url = "/docs/1.0/prologue/introduction/"
   weight = 20
+
 
 [[main]]
   name = "Pricing"
