@@ -7,7 +7,7 @@ lastmod: 2020-11-04T09:19:42+01:00
 draft: false
 weight: 10
 images: ["say-hello-to-doks.png"]
-contributors: ["Henk Verlinde"]
+contributors: ["QiosQi Team"]
 ---
 
 {{< img-simple src="say-hello-to-doks.png" alt="Say Hello to Doks" class="d-block mx-auto shadow mb-5" >}}
