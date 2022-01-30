@@ -38,10 +38,11 @@
     <div class="border-top border-default pt-3 d-flex justify-content-between">
       <ul class="list-inline social-icons m-0">
         {{ range site.Menus.social }}
-        <li class="list-inline-item mb-3"><a href="{{ .URL | safeURL }}"><i class="fab fa-{{ .Name }}"></i></a></li>
+        <li class="list-inline-item mb-3"><a href="{{ .URL | safeURL }}" target="_blank"><i class="fab fa-{{ .Name }}"></i></a></li>
         {{ end }}
       </ul>
-      <div class="pt-1">{{ site.Params.Copyright | markdownify }}</div>
+      <div class="pt-1">{{ site.Params.Copyright | markdownify }} <span id="copyright-year"></span></div>
+      <script>document.getElementById("copyright-year").innerHTML = new Date().getFullYear();</script>
     </div>
   </div>
 </footer>

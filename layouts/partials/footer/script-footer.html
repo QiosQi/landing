@@ -4,6 +4,9 @@
 {{ $frontTemplate := resources.Get "js/front.js" -}}
 {{ $front := $frontTemplate | resources.ExecuteAsTemplate "front.js" . -}}
 
+{{ $contactTemplate := resources.Get "js/contact.js" -}}
+{{ $contact := $contactTemplate | resources.ExecuteAsTemplate "contact.js" . -}}
+
 {{ $bs := resources.Get "js/bootstrap.js" -}}
 {{ $bs := $bs | js.Build -}}
 
@@ -87,10 +90,12 @@
   <script src="{{ $jquery.RelPermalink }}" defer></script>
   <script src="{{ $slick.RelPermalink }}" defer></script>
   <script src="{{ $front.RelPermalink }}" defer></script>
+  <script src="{{ $contact.RelPermalink }}" defer></script>
 {{ else -}}
   {{ $js := $js | minify | fingerprint "sha512" -}}
   {{ $index := $index | minify | fingerprint "sha512" -}}
   {{ $front := $front | minify | fingerprint "sha512" -}}
+  {{ $contact := $contact | minify | fingerprint "sha512" -}}
   {{ $bs := $bs | minify | fingerprint "sha512" -}}
   {{ $highlight := $highlight | minify | fingerprint "sha512" -}}
   {{ $jquery := $jquery | fingerprint "sha512" -}}
@@ -118,4 +123,10 @@
   <script src="{{ $jquery.Permalink }}" integrity="{{ $jquery.Data.Integrity }}" crossorigin="anonymous" defer></script>
   <script src="{{ $slick.Permalink }}" integrity="{{ $slick.Data.Integrity }}" crossorigin="anonymous" defer></script>
   <script src="{{ $front.Permalink }}" integrity="{{ $front.Data.Integrity }}" crossorigin="anonymous" defer></script>
+  <script src="{{ $contact.Permalink }}" integrity="{{ $contact.Data.Integrity }}" crossorigin="anonymous" defer></script>
+{{ end -}}
+
+{{- $current := . -}}
+{{ if eq $current.Section "contact" -}}
+  <script src="https://www.google.com/recaptcha/api.js"></script>
 {{ end -}}

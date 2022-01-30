@@ -38,7 +38,7 @@
                 {{ range .Site.Menus.learn -}}
                   {{- $active := or ($current.IsMenuCurrent "learn" .) ($current.HasMenuCurrent "learn" .) -}}
                   {{- $active = or $active (eq .Name $current.Title) -}}
-                  {{- $active = or $active (and (eq .Name "Documentation") (eq $current.Section "docs")) -}}
+                  {{- $active = or $active (and (eq .Name "Help Center") (eq $current.Section "docs")) -}}
                   {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "authors")) -}}
                   <li class="nav-item">
                     <a class="nav-link f1-125 {{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
@@ -50,7 +50,7 @@
             {{ range .Site.Menus.learn -}}
               {{- $active := or ($current.IsMenuCurrent "learn" .) ($current.HasMenuCurrent "learn" .) -}}
               {{- $active = or $active (eq .Name $current.Title) -}}
-              {{- $active = or $active (and (eq .Name "Documentation") (eq $current.Section "docs")) -}}
+              {{- $active = or $active (and (eq .Name "Help Center") (eq $current.Section "docs")) -}}
               {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "authors")) -}}
               
               <li class="nav-item d-md-none">

@@ -4,39 +4,39 @@
 title = "QiosQi"
 titleSeparator = "-"
 titleAddition = "QiosQi Digital Restaurant"
-description = "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
+description = "Transform the way you work your Restaurant, with one place for everyone and everything you need to get stuff done."
 
 ## Documentation
 # docsVersion = "0.3"
 
 ## Open Graph
-images = ["doks.png"]
+images = ["front/kitchen.jpg"]
 ogLocale = "en_US"
-domainTLD = "doks.netlify.app"
-titleHome = "Doks Theme"
+domainTLD = "qiosqi.com"
+titleHome = "QiosQi"
 
 ## Twitter Cards
-twitterSite = "@getdoks"
-twitterCreator = "@henkverlinde"
+twitterSite = "@QiosQi"
+twitterCreator = "@QiosQi"
 
 ## JSON-LD
 # schemaType = "Person"
 schemaType = "Organization"
 schemaName = "QiosQi"
 schemaAuthor = "QiosQi Team"
-schemaAuthorTwitter = "https://twitter.com/henkverlinde"
-schemaAuthorLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
-schemaAuthorGitHub = "https://github.com/h-enk"
+schemaAuthorTwitter = "https://twitter.com/QiosQi"
+schemaAuthorLinkedIn = "https://www.linkedin.com/in/qiosqi/"
+schemaAuthorGitHub = "https://github.com/qiosqi"
 schemaLocale = "en-US"
-schemaLogo = "logo-doks.png"
+schemaLogo = "apple-touch-icon.png"
 schemaLogoWidth = 512
 schemaLogoHeight = 512
-schemaImage = "doks.png"
-schemaImageWidth = 1280
-schemaImageHeight = 640
-schemaTwitter = "https://twitter.com/getdoks"
+schemaImage = "front/kitchen.jpg"
+schemaImageWidth = 5265 
+schemaImageHeight = 2962
+schemaTwitter = "https://twitter.com/QiosQi"
 schemaLinkedIn = ""
-schemaGitHub = "https://github.com/h-enk/doks"
+schemaGitHub = "https://github.com/qiosqi"
 schemaSection = "blog"
 
 ## Sitelinks Search Box
@@ -56,19 +56,19 @@ logoLight = "/logo-full-white.svg"
 
 
 # Feed
-copyRight = "© QiosQi - 2021"
+copyRight = "&#169; QiosQi - "
 
 # Alert
 alert = true
 alertDismissable = true
 # alertText = "Introducing the Doks child theme, several DX + UX updates, and more! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\" target=\"_blank\" rel=\"noopener\">Check out Doks v0.2</a>"
-alertText = "Introducing the Doks child theme, several DX + UX updates, and more! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\">Check out Doks v0.2</a>"
+alertText = "Welcome to QiosQi the 1st Digital Restaurant! <a class=\"alert-link stretched-link\" href=\"https://app.qiosqi.com\">Get your own FREE Digital Restaurant System!</a>"
 
 # Edit Page
 # repoHost [Github | Gitea | GitLab] is used for building the edit link based on git hoster
 repoHost = "GitHub"
 #repoHost = "Gitea"
-docsRepo = "https://github.com/h-enk/doks"
+docsRepo = "https://github.com/qiosqi"
 docsRepoBranch = "master"
 editPage = false
 

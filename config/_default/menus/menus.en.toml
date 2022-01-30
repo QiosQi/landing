@@ -16,7 +16,7 @@
   weight = 10
 
 [[learn]]
-  name = "Documentation"
+  name = "Help Center"
   url = "/docs/prologue/introduction/"
 # url = "/docs/1.0/prologue/introduction/"
   weight = 20
@@ -35,14 +35,14 @@
 [[social]]
   identifier = "facebook"
   name = "facebook-f" 
-  url = "#"
+  url = "https://www.facebook.com/QiosQi"
 
 [[social]]
   identifier = "twitter"
   name = "twitter" 
-  url = "#"
+  url = "https://twitter.com/QiosQi"
 
 [[social]]
-  identifier = "linkedin"
-  name = "linkedin-in" 
-  url = "#"
+  identifier = "instagram"
+  name = "instagram" 
+  url = "https://www.instagram.com/qiosqi/"
