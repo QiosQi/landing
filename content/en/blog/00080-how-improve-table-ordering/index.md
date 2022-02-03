@@ -6,11 +6,11 @@ date: 2020-11-04T09:19:42+01:00
 lastmod: 2020-11-04T09:19:42+01:00
 draft: false
 weight: -80
-images: ["Table-3-Close-Both-P1088557-blog.png"]
+images: ["Table-3-Close-Both-P1088557-blog.jpg"]
 contributors: ["QiosQi Team"]
 ---
 
-{{< img-simple src="Table-3-Close-Both-P1088557-blog.png" alt="Say Hello to Doks" class="d-block mx-auto shadow mb-5" >}}
+{{< img-simple src="Table-3-Close-Both-P1088557-blog.jpg" alt="Say Hello to Doks" class="d-block mx-auto shadow mb-5" >}}
 
 Here are five simple steps to provide an even better experience for your customers when introducing Table Ordering through QR codes in your restaurant.
 
