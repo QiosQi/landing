@@ -6,11 +6,7 @@ lastmod: 2020-08-27T19:23:18.000+02:00
 images: []
 
 ---
-## **Privacy Policy**
-
-
 _Last update: June 4th 2021_
-
 
 This document is currently only available in English, please write us at @@@ if there is anything you do not understand or need translated to your native language.
 This document describes QiosQi' use and protection of your personal data. QiosQi Sarl is the company behind QiosQi available at qiosqi.com, app.qiosqi.com and the QiosQi native mobile apps for iOS and Android.
@@ -21,8 +17,7 @@ When you visit QiosQi, one of our domains or one of our apps will automatically 
 
 It is a requirement that you must be 13 years old to be able to use QiosQi.
 
-### **Data collected automatically**
-
+### Data collected automatically
 
 The data that we automatically collect from your visit is not personal. In other words, the data is not used to identify you as a person, but is used to follow the tendencies in consumer behaviour in general.
 
