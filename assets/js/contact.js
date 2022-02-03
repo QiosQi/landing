@@ -2,10 +2,12 @@
 function onSubmit(token) {
     var _form = $('form[name=contact]');
     var data = _form.serialize();
+    var url = 'https://us-central1-solid-outlook-270109.cloudfunctions.net/contactSubmit'; 
     var btn = _form.find('button[type=submit]');
     btn.text('Sending...');
+    
     $.ajax({
-        url: _form.attr('action'),
+        url: url,
         type: _form.attr('method'),
         dataType: 'json',
         data: data,

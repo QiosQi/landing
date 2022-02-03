@@ -1,4 +1,4 @@
-baseurl = "https://beta.qiosqi.com/"
+baseurl = "https://qiosqi.com/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
