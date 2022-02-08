@@ -1,7 +1,7 @@
 ---
 title: "Wix"
-description: "QiosQi vs. Wix"
-lead: "QiosQi vs. Wix"
+description: "QiosQi is a specialized platform for restaurants and a beautiful Wix alternative."
+lead: "QiosQi is a specialized Wix alternative"
 date: 2020-11-16T13:59:39+01:00
 lastmod: 2020-11-16T13:59:39+01:00
 draft: false
@@ -13,57 +13,24 @@ weight: 110
 toc: true
 ---
 
-## Requirements
+## Wiki
 
-Doks uses npm to centralize dependency management, making it [easy to update]({{< relref "how-to-update" >}}) resources, build tooling, plugins, and build scripts:
+Wix mainly purpose is the building of a website. His power comes of the extensibility of the platform and from the offered plugins. That makes it a generic approach of restaurant needs. Wix comes with a difficult setup, maintenance and colaboration of the different features.
 
-- Download and install [Node.js](https://nodejs.org/) (it includes npm) for your platform.
 
-## Start a new Doks project
+## Features
 
-Create a new site, change directories, install dependencies, and start development server.
+|   | QiosQi | Wix |
+| -- | :--: | :--: |
+| Menu  | Yes | plugin  |
+| Orders  | Yes | plugin  |
+| Reservations | Yes | plugin  |
+| Management  | Yes | plugin  |
 
-### Create a new site
+### When to choose Wix
 
-Doks is available as a child theme, and a starter theme:
+If the main purpose of the restaurant is only the building of a customizable website, then Wix is definitely a winner.
 
-- Use the Doks child theme, if you do __not__ plan to customize a lot, and/or need future Doks updates.
-- Use the Doks starter theme, if you plan to customize a lot, and/or do __not__ need future Doks updates.
+### When to choose QiosQi
 
-Not quite sure? Use the Doks child theme.
-
-#### Doks child theme
-
-```bash
-git clone https://github.com/h-enk/doks-child-theme.git my-doks-site
-```
-
-#### Doks starter theme
-
-```bash
-git clone https://github.com/h-enk/doks.git my-doks-site
-```
-
-### Change directories
-
-```bash
-cd my-doks-site
-```
-
-### Install dependencies
-
-```bash
-npm install
-```
-
-### Start development server
-
-```bash
-npm run start
-```
-
-Doks will start the Hugo development webserver accessible by default at `http://localhost:1313`. Saved changes will live reload in the browser.
-
-## Other commands
-
-Doks comes with commands for common tasks. [Commands →]({{< relref "commands" >}})
+In all cases, QiosQi comes in front of any difficult and complex situation and gives all around solutions.

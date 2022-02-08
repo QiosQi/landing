@@ -1,7 +1,7 @@
 ---
-title: "Uber Eats"
-description: "QiosQi vs. Uber Eats"
-lead: "QiosQi vs. Uber Eats"
+title: "UberEats"
+description: "QiosQi is a standalone or a complementary tool of UberEats, Deliveroo, Doordash, GrubHub, ... and any 3rd party aggregators"
+lead: "QiosQi is a standalone or a complementary tool of any 3rd party aggregators"
 date: 2020-10-13T15:21:01+02:00
 lastmod: 2020-10-13T15:21:01+02:00
 draft: false
@@ -13,86 +13,30 @@ weight: 170
 toc: true
 ---
 
-{{< alert icon="💡" text="You can change the commands in the scripts section of `./package.json`." />}}
+## Wiki
 
-## create
+The rise of 3rd party delivery is among the most dominant trends in the restaurant industry. Multiple 3rd party order aggregators, including DoorDash, Grubhub, and UberEats, have managed to build a loyal following and offer their services to all restaurants. Restaurant operators need to understand what these organizations provide, as well as the challenges and benefits of such partnerships.
 
-Create new content for your site:
+## Features
 
-```bash
-npm run create [path] [flags]
-```
+|   | QiosQi | UberEats |
+| -- | :--: | :--: |
+| Cities  | All kind | Only Big Cities |
+| Payments  | Payment Gateway | Owned Payment Platform |
+| Orders Fee | Monthly Standard | % Fee per Order |
+| Total Platform Price  | $$ | $$$$ |
+| Customers Data | Yes | No |
+| Reservations | Yes | No |
+| Team Management  | Yes | No |
 
-See also the Hugo whyus: [hugo new](https://gohugo.io/commands/hugo_new/).
 
-## lint
+## Choose Both
+### Choose a 3rd party aggregators
 
-Check scripts, styles, and markdown for errors:
+If this aggregator is reliable and supported in your City.
 
-```bash
-npm run lint
-```
+### Choose QiosQi
 
-### scripts
-
-Check scripts for errors:
-
-```bash
-npm run lint:scripts [-- --fix]
-```
-
-### styles
-
-Check styles for errors:
-
-```bash
-npm run lint:styles [-- --fix]
-```
-
-### markdown
-
-Check markdown for errors:
-
-```bash
-npm run lint:markdown [-- --fix]
-```
-
-## clean
-
-Delete temporary directories:
-
-```bash
-npm run clean
-```
-
-## start
-
-Start local development server:
-
-```bash
-npm run start
-```
-
-## build
-
-Build production website:
-
-```bash
-npm run build
-```
-
-### functions
-
-Build Lambda functions:
-
-```bash
-npm run build:functions
-```
-
-### preview
-
-Build production website including draft and future content:
-
-```bash
-npm run build:preview
-```
+Eliminate the big revenue waste that aggregators fees causing. Increase customers loyalty and return back this revenue increase to your customers and your staff!
+Create special discounts through QiosQi platform and keep your customers happy forever and away for the expensive 3rd party aggregators.
+Additionally, QiosQi platform introduce to the team-staff colaboration and efficient orders and reservations handling.

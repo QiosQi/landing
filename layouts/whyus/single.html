@@ -26,8 +26,8 @@
 						</ol>
 					</nav>
 				{{ end }}
-				<h1>{{ .Title }}</h1>
-				<p class="lead">{{ .Params.lead | safeHTML }}</p>
+				<h1 class="text-center">{{ .Params.lead }}</h1>
+				<p class="lead">{{ .Params.description | safeHTML }}</p>
 				{{ if ne .Params.toc false -}}
 				<nav class="d-xl-none" aria-label="Quaternary navigation">
 					{{ partial "sidebar/whyus-toc.html" . }}

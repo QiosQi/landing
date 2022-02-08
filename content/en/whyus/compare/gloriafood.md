@@ -1,9 +1,9 @@
 ---
 title: "Gloriafood"
-description: "QiosQi vs. Gloriafood"
-lead: "QiosQi vs. Gloriafood"
-date: 2020-10-13T15:21:01+02:00
-lastmod: 2020-10-13T15:21:01+02:00
+description: "QiosQi is a beautiful Gloriafood alternative. Having the same strategy direction, QiosQi differs for his competitor by implementing advanced features. Menu stock capabilities, reservations capabilities, Website generation and QiosQi Team Colaboration, makes QiosQi an advanced tool and takes that strategy to the next level."
+lead: "QiosQi is an advanced and a beautiful Gloriafood alternative"
+date: 2020-11-16T13:59:39+01:00
+lastmod: 2020-11-16T13:59:39+01:00
 draft: false
 images: []
 menu:
@@ -13,86 +13,27 @@ weight: 150
 toc: true
 ---
 
-{{< alert icon="💡" text="You can change the commands in the scripts section of `./package.json`." />}}
+## Wiki
 
-## create
+Gloriafood is an online ordering system for restaurants that allows you to accept orders for pickup and/or delivery.
 
-Create new content for your site:
+## Features
 
-```bash
-npm run create [path] [flags]
-```
+|   | QiosQi | Gloriafood |
+| -- | :--: | :--: |
+| Orders | Yes | Yes |
+| Menu Stock | Yes | No |
+| Reservations | Advanced | Simplified |
+| Payment Gateway | Yes | Yes |
+| Team Management  | Yes | No |
+| Scalable to Large  | Yes | No |
 
-See also the Hugo whyus: [hugo new](https://gohugo.io/commands/hugo_new/).
 
-## lint
+### When to choose Gloriafood
 
-Check scripts, styles, and markdown for errors:
+If you want a simplified version of just accepting orders and reservations requests.
 
-```bash
-npm run lint
-```
+### When to choose QiosQi
 
-### scripts
-
-Check scripts for errors:
-
-```bash
-npm run lint:scripts [-- --fix]
-```
-
-### styles
-
-Check styles for errors:
-
-```bash
-npm run lint:styles [-- --fix]
-```
-
-### markdown
-
-Check markdown for errors:
-
-```bash
-npm run lint:markdown [-- --fix]
-```
-
-## clean
-
-Delete temporary directories:
-
-```bash
-npm run clean
-```
-
-## start
-
-Start local development server:
-
-```bash
-npm run start
-```
-
-## build
-
-Build production website:
-
-```bash
-npm run build
-```
-
-### functions
-
-Build Lambda functions:
-
-```bash
-npm run build:functions
-```
-
-### preview
-
-Build production website including draft and future content:
-
-```bash
-npm run build:preview
-```
+QiosQi platform introduce to the team-staff colaboration and efficient orders and reservations handling.
+Aside that, includes advanced features in orders and auto reservations acceptance according to the capability of your restaurant.

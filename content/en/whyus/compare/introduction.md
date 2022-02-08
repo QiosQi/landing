@@ -1,7 +1,7 @@
 ---
 title: "Introduction"
-description: "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
-lead: "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
+description: "A unique approach, that designed first for restaurants, their people and their customers satisfaction."
+lead: "QiosQi. The Digital Restaurant."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -17,6 +17,7 @@ toc: true
 
 There are two main ways to get started with Doks:
 
+## Competitors
 ### Tutorial
 
 {{< alert icon="👉" text="The Tutorial is intended for novice to intermediate users." />}}
