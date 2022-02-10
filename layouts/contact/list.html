@@ -29,6 +29,16 @@
 			<div class="col-16 col-md-8 infoform my-5">
 				<form name="contact" method="POST" id="contact-form">
 					<div class="row">
+						<div class="col-16">
+							<div class="alert alert-success mt-4 d-none" id="contact-success" role="alert">
+								<h4 class="alert-heading">Your message well received!</h4>
+								<p>Our team will come back to you as soon as possible.</p>
+							</div>
+							<div class="alert alert-danger mt-4 d-none" id="contact-danger" role="alert">
+								<h4 class="alert-heading">Your message failed to send.</h4>
+								<p>Please try again later.</p>
+							</div>
+						</div>
 						<div class="col-8 pe-2">
 							<div class="form-group mt-4">
 								<label class="">First Name</label>

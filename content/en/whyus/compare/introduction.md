@@ -13,47 +13,26 @@ weight: 100
 toc: true
 ---
 
-## Get started
-
-There are two main ways to get started with Doks:
-
 ## Competitors
-### Tutorial
+### Wix
 
-{{< alert icon="👉" text="The Tutorial is intended for novice to intermediate users." />}}
+Wix a website builder. His power comes of the extensibility of the platform and from the offered plugins. That makes it a generic approach of restaurant needs. Wix comes with a difficult setup, maintenance and colaboration of the different features.
 
-Step-by-step instructions on how to start a new Doks project. [Tutorial →](https://getdoks.org/tutorial/introduction/)
+[Wix →]({{< relref "wix" >}})
 
-### Quick Start
+### Square
 
-{{< alert icon="👉" text="The Quick Start is intended for intermediate to advanced users." />}}
+Square is a payments platform aimed at small and medium businesses that allows them to accept credit card payments and use tablet computers as payment registers for a point-of-sale system.
 
-One page summary of how to start a new Doks project. [Quick Start →]({{< relref "quick-start" >}})
+[Square →]({{< relref "square" >}})
 
-## Go further
+### Gloriafood
 
-Recipes, Reference Guides, Extensions, and Showcase.
+Gloriafood is an online ordering system for restaurants that allows you to accept orders for pickup and/or delivery.
 
-### Recipes
+[Gloriafood →]({{< relref "gloriafood" >}})
+### UberEats
 
-Get instructions on how to accomplish common tasks with Doks. [Recipes →](https://getdoks.org/docs/recipes/project-configuration/)
+The rise of 3rd party delivery is among the most dominant trends in the restaurant industry. Multiple 3rd party order aggregators, including DoorDash, Grubhub, and UberEats, have managed to build a loyal following and offer their services to all restaurants. Restaurant operators need to understand what these organizations provide, as well as the challenges and benefits of such partnerships.
 
-### Reference Guides
-
-Learn how to customize Doks to fully make it your own. [Reference Guides →](https://getdoks.org/docs/reference-guides/security/)
-
-### Extensions
-
-Get instructions on how to add even more to Doks. [Extensions →](https://getdoks.org/docs/extensions/breadcrumb-navigation/)
-
-### Showcase
-
-See what others have build with Doks. [Showcase →](https://getdoks.org/showcase/electric-blocks/)
-
-## Contributing
-
-Find out how to contribute to Doks. [Contributing →](https://getdoks.org/docs/contributing/how-to-contribute/)
-
-## Help
-
-Get help on Doks. [Help →]({{< relref "how-to-update" >}})
+[UberEats →]({{< relref "uber-eats" >}})

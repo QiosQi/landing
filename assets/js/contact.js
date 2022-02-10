@@ -5,7 +5,9 @@ function onSubmit(token) {
     var url = 'https://us-central1-solid-outlook-270109.cloudfunctions.net/contactSubmit'; 
     var btn = _form.find('button[type=submit]');
     btn.text('Sending...');
-    
+    $('#contact-success').addClass('d-none');
+    $('#contact-danger').addClass('d-none');
+
     $.ajax({
         url: url,
         type: _form.attr('method'),
@@ -16,21 +18,23 @@ function onSubmit(token) {
             if (response.success) {
 
                 _form.trigger('reset');
-                alert(response.message);
+                $('#contact-success').removeClass('d-none');
 
                 return false;
             } else {
-                if (response.message) {
-                    alert(response.message);
-                } else {
-                    alert('Something wrong. Please try again.');
-                }
+                // if (response.message) {
+                //     alert(response.message);
+                // } else {
+                //     alert('Something wrong. Please try again.');
+                // }
+                $('#contact-danger').removeClass('d-none');
             }
             return false;
         },
         error: function (err) {
             btn.text('SUBMIT');
             console.log(err);
+            $('#contact-danger').removeClass('d-none');
             return false;
         }
     });
